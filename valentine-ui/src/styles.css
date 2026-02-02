@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  height: 100vh;
+  background: linear-gradient(135deg, #f6efe9, #f3d5c0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass screen */
+.screen {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.55);
+  border-radius: 25px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.8);
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg,#e07a5f,#f2a65a);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* YES button */
+.yes {
+  background: linear-gradient(135deg,#e36414,#f2a65a);
+}
+
+/* NO button */
+.no {
+  background: #cfc6b8;
+  color: #444;
+}
+
+.chat .bubble {
+  background: rgba(255,255,255,0.85);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+@keyframes fade {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@media (max-width: 600px) {
+  .screen {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .chat .bubble {
+    max-width: 80%;
+  }
+}
+
+.screen {
+  max-width: 420px;
+  padding: 30px;
+}
+
+.timeline-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.timeline-card p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro-line {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .intro-title {
+    font-size: 2rem;
+  }
+}
+
+.text-input {
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  min-height: 80px;
+  padding: 12px;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 15px;
+  resize: none;
+  font-family: inherit;
+}
+
+.reaction {
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.options {
+  position: relative;
+}
+
+.options button {
+  position: relative;
+}
+
+.reaction p {
+  margin: 5px 0;
+}
+
+.mini-slideshow {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.final {
+  text-align: center;
+}
+
+.final-title {
+  font-size: 2rem;
+  background: linear-gradient(135deg,#e36414,#f2a65a);
+  background-clip: text;          /* Standard */
+  -webkit-background-clip: text; /* Safari / Chrome */
+  color: transparent;
+  text-shadow: 0 5px 15px rgba(227,100,20,0.4);
+}
+
+
+.final-sub {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #444;
+}
+
+.final-love {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.final-heart {
+  font-size: 3rem;
+  margin-top: 25px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
